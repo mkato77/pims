@@ -1,7 +1,7 @@
 async function merge() {
-  const FOLDER_ID = '1ClK4SLf-_NZQfBaOrgWuUeiyIwsNq_kQ';//フォルダ ID
-  const EXPORT_ID = '1gJunfutdbRRZYGXfV_ZP2yIchnquScba';//フォルダ ID
-  var doneFolderId = "17P5mVD3GElaXRBpa1eM-4yVZ0-COGJHk";
+  const FOLDER_ID = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'; //変える
+  const EXPORT_ID = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'; //変える
+  var doneFolderId = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; //変える
 
   // マージ用の空PDF空を作成
   const mergedPdf = await PDFLib.PDFDocument.create();
