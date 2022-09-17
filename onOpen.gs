@@ -1,8 +1,6 @@
 function onOpen() {
   var app = SpreadsheetApp.getUi();           // Uiクラスを取得する
   var menu = app.createMenu('引換票発行');  // Uiクラスからメニューを作成する
-  menu.addItem('メニュー表示', 'showSidebar');   // メニューにアイテムを追加する
-  menu.addSeparator();
   menu.addItem('一括で出力する', 'allFunction');   // メニューにアイテムを追加する
   menu.addSeparator();
   menu.addItem('撮影用: 1つのPDFに出力する', 'camFunction');   // メニューにアイテムを追加する
