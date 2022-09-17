@@ -1,4 +1,3 @@
-# 動画受付メール送信
 function sendMail() {
   var mode = "受付メール";
 
@@ -79,7 +78,7 @@ function sendMail() {
           var subject = '[重要] パートCMに不備があります。至急ご確認ください。';
 
           //本文
-          var mainMessage = userData + '（' + user.partName + '）<br><br>こんにちは。<br>提出された文化祭パートCMについて、映像が不備があり、受け付けられない状態となっています。<br><br>至急、内容を修正の上、再提出してください。<br><br><strong>最終の提出期限は、8月21日です。</strong>期限までに提出していただかない場合、映像を放映できません。<br><br>-----<br><br><strong>リジェクト理由</strong>：<br>' + user.rejectionReason + '<br><br><strong>受け付けた動画URL</strong>：<br>' + user.movieURL;
+          var mainMessage = userData + '（' + user.partName + '）<br><br>こんにちは。<br>提出された文化祭パートCMについて、映像が不備があり、受け付けられない状態となっています。<br><br>至急、内容を修正の上、再提出してください。<br><br><strong>最終の提出期限は、MM月DD日です。</strong>期限までに提出していただかない場合、映像を放映できません。<br><br>-----<br><br><strong>リジェクト理由</strong>：<br>' + user.rejectionReason + '<br><br><strong>受け付けた動画URL</strong>：<br>' + user.movieURL;
           sheet.getRange("AI" + i).setValue("不合格");
 
         }
@@ -90,25 +89,24 @@ function sendMail() {
         var subject = '[重要] パートCMが未提出です。至急提出してください。';
 
         //本文
-        var mainMessage = userData + '（' + user.partName + '）<br><br>こんにちは。<br>文化祭パートCMについて、現在映像が未提出状態となっています。<br>至急、映像を提出してください。<br><br><strong>最終の提出期限は、8月21日です。</strong>期限までに提出していただかない場合、映像を放映しません。<br><br><strong>映像を提出したつもりなのにこのメールが届いた場合：</strong>フォームでの提出が行われていない可能性があります。<a href="https://docs.google.com/document/d/1WGJMdHRE_wDMEuptvsqNPzMXRHtSl3dpVdbu5E6YELE/edit?usp=sharing">パート長会議でお渡しした資料</a>で提出方法をご確認ください。';
+        var mainMessage = userData + '（' + user.partName + '）<br><br>こんにちは。<br>文化祭パートCMについて、現在映像が未提出状態となっています。<br>至急、映像を提出してください。<br><br><strong>最終の提出期限は、MM月DD日です。</strong>期限までに提出していただかない場合、映像を放映しません。<br><br><strong>映像を提出したつもりなのにこのメールが届いた場合：</strong>フォームでの提出が行われていない可能性があります。お渡しした資料で提出方法をご確認ください。';
         sheet.getRange("AI" + i).setValue("未提出");
 
       }
 
       //差出人名
-      var name = '放送外局 パートCM担当（加藤 実）';
+      var name = '放送外局 パートCM担当';
 
 
       if (user.message != "") {
         mainMessage = mainMessage + '<br><br>-----<br><br><strong>連絡事項があります</strong>：<br><br>' + user.message;
       }
 
-      var message = mainMessage + '<br><br>-----<br><br>提出方法等は、<a href="https://docs.google.com/document/d/1WGJMdHRE_wDMEuptvsqNPzMXRHtSl3dpVdbu5E6YELE/edit?usp=sharing">パート長会議でお渡しした資料</a>をご確認ください。<br><br>なお、不明な点や相談事項がある場合には、このメールに返信してください。<br><br>-----<br><br>放送外局 パートCM担当<br>高ⅠⅭ24 加藤 実（67045@aikogakuen.net）<br><br>※このメールは、システムにより自動配信しています。内容に間違いがある場合は、返信してください。';
+      var message = mainMessage + '<br><br>-----<br><br>提出方法等は、お渡しした資料をご確認ください。<br><br>なお、不明な点や相談事項がある場合には、このメールに返信してください。<br><br>-----<br><br>放送外局 パートCM担当<br><br>※このメールは、システムにより自動配信しています。内容に間違いがある場合は、返信してください。';
 
       let options = {
         "htmlBody": message,
         "name": name,
-        "cc": "67045+partcm@aikogakuen.net"
       };
       //メール送信
       MailApp.sendEmail(user.email, subject, message, options);
