@@ -1,7 +1,7 @@
 function exportToPDF() {
-  var folderId = "1jvVEYlAGxViy2sj4jAsQRJ6lKMx7EUXr"; // folder with docs
-  var moveToFolderId = "1ClK4SLf-_NZQfBaOrgWuUeiyIwsNq_kQ"; // folder to move PDF
-  var doneFolderId = "17P5mVD3GElaXRBpa1eM-4yVZ0-COGJHk"; // folder with docs that have already been converted to PDF (to reduce duplication)
+  var folderId = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; // 変える、folder with docs
+  var moveToFolderId = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; // 変える、folder to move PDF
+  var doneFolderId = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; // 変える、folder with docs that have already been converted to PDF (to reduce duplication)
 
   var filesN = DriveApp.getFolderById(folderId).getFiles();
   var downloadedFolder = DriveApp.getFolderById(moveToFolderId);
