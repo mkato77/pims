@@ -1,6 +1,7 @@
 # PIMS (Part cm Information Management System)
 
-iPad貸出票の配布や提出状況のメール送信など、面倒な事務作業からの脱却。
+パートCM制作における、iPad貸出票の配布や提出状況のメール送信など、面倒な事務作業からの脱却。
+
 放送委員会向け業務効率化システム。
 
 [https://github.com/mkato77/pims](https://github.com/mkato77/pims)
