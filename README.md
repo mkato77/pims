@@ -1,5 +1,5 @@
 # pims
-Part CM Management System for Broadcasting Committee
+Partcm Information Management System for Broadcasting Committee
 
 ## Template Spreadsheet & Form & GAS
 You can copy this and use it as is.
