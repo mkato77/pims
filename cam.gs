@@ -43,7 +43,7 @@ function camExport() {
   var pages = 1;
 
   //ドキュメントを格納するフォルダを取得
-  var targetFolder = DriveApp.getFolderById("1jvVEYlAGxViy2sj4jAsQRJ6lKMx7EUXr");
+  var targetFolder = DriveApp.getFolderById("XXXXXXXXXXXXXXXXXXXXXX"); //変える
 
   //項目タイトルを覗く3行目~最終行について、ドキュメントを作成する
   for (i = 3; i <= count; i++) {
@@ -60,7 +60,7 @@ function camExport() {
 
       //ドキュメントを作成
       //コピー元のファイルを取得します。
-      var sourcefile = DriveApp.getFileById("19NT2xwIVyQud96zg7JBtzap7xarQBcuUPh6cWMPKXZw");
+      var sourcefile = DriveApp.getFileById("XXXXXXXXXXXXXXXXXXXXXX"); //変える
       //コピーを作成します。
       newfile = sourcefile.makeCopy("iPad引換票[撮影]_" + removeText(user.partName) + "_" + displayDate);
       //コピー後のファイルを取得します。
