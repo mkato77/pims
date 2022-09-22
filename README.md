@@ -76,7 +76,7 @@ var targetFolder = DriveApp.getFolderById("vnayop38y5bal8ob9wbiue"); //変える
 
 同様に、以下の部分も変えてください。
 
-| ファイル名 | 行番号 | フォルダ |
+| ファイル名 | 行番号 | フォルダ・ファイル |
 | --- | --- | --- |
 | cam.gs | 46 | PIMS/作業フォルダ/変換待ち |
 | cam.gs | 63 | 貸出票Template |
