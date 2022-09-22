@@ -13,6 +13,8 @@
 
 ### 貸出票発行機能
 
+![image](https://user-images.githubusercontent.com/80267487/191639306-714e27a7-200b-478b-a684-bb64543ddecc.png)
+
 iPadを貸し出す際に必要な貸出票のPDFを、チェックを入れたパート分一括で発行します。
 
 ### 動画受付メール送信
