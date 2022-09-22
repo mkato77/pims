@@ -49,9 +49,8 @@ PIMS/
 スプレッドシート・フォーム・GAS
 [https://docs.google.com/spreadsheets/d/1lkWak9yb59ChyUXKrwmaEMXDW4vsKy_ZUJlB9EZsgGU/copy](https://docs.google.com/spreadsheets/d/1lkWak9yb59ChyUXKrwmaEMXDW4vsKy_ZUJlB9EZsgGU/copy)
 
-貸出票
-[https://docs.google.com/document/d/1DetvKPlyxa56vd_7_UlM3Hdj13VZat9Nrw9ZKGLfNIM/copy]
-(https://docs.google.com/document/d/1DetvKPlyxa56vd_7_UlM3Hdj13VZat9Nrw9ZKGLfNIM/copy)
+貸出票Template
+[https://docs.google.com/document/d/1DetvKPlyxa56vd_7_UlM3Hdj13VZat9Nrw9ZKGLfNIM/copy](https://docs.google.com/document/d/1DetvKPlyxa56vd_7_UlM3Hdj13VZat9Nrw9ZKGLfNIM/copy)
 
 ### ステップ3　パラメータ変更
 Google Apps Script内cam.gsを開き、46行目に移動してください。
