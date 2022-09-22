@@ -13,19 +13,15 @@
 
 ### 貸出票発行機能
 
-![image](https://user-images.githubusercontent.com/80267487/191639306-714e27a7-200b-478b-a684-bb64543ddecc.png)
-
 iPadを貸し出す際に必要な貸出票のPDFを、チェックを入れたパート分一括で発行します。
+
+![image](https://user-images.githubusercontent.com/80267487/191639306-714e27a7-200b-478b-a684-bb64543ddecc.png)
 
 ### 動画受付メール送信
 
 動画の提出状況をそれぞれのパートに送信することができます。
 
 未提出・提出済不合格・提出済合格の３種類のメールを送信できます。
-
-
-
-
 
 ## 導入方法＆テンプレート
 
@@ -49,9 +45,11 @@ PIMS/
 ### ステップ2　テンプレートをコピー
 
 スプレッドシート・フォーム・GAS
+
 [https://docs.google.com/spreadsheets/d/1lkWak9yb59ChyUXKrwmaEMXDW4vsKy_ZUJlB9EZsgGU/copy](https://docs.google.com/spreadsheets/d/1lkWak9yb59ChyUXKrwmaEMXDW4vsKy_ZUJlB9EZsgGU/copy)
 
 貸出票Template
+
 [https://docs.google.com/document/d/1DetvKPlyxa56vd_7_UlM3Hdj13VZat9Nrw9ZKGLfNIM/copy](https://docs.google.com/document/d/1DetvKPlyxa56vd_7_UlM3Hdj13VZat9Nrw9ZKGLfNIM/copy)
 
 ### ステップ3　パラメータ変更
